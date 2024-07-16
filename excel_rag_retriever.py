@@ -32,6 +32,7 @@ if "df_info" not in st.session_state:
     st.session_state.df_info = None
 
 # Function to process Excel file
+# sample file: https://learn.microsoft.com/en-us/power-bi/create-reports/sample-financial-download
 def process_excel(file):
     df = pd.read_excel(file)
     
